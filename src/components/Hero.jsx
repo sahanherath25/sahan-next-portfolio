@@ -5,7 +5,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import "../styles/components/Hero.css";
 
 // use your uploaded image (local path)
-const AVATAR = "/mnt/data/f6eaf7da-ab4a-4bb7-a536-21b0ac855c0a.png";
+const AVATAR = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgX9CNFLSCR9km6ucO48FuXob1wOCSkVhcPnN2661YKYRVQmUKElQsTZiVk35KZzBOi2c&usqp=CAU";
 
 export default function Hero() {
     const containerRef = useRef(null);
@@ -127,7 +127,8 @@ export default function Hero() {
                         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                     >
                         <div className="avatar-blob">
-                            <img src={AVATAR} alt="Sahan avatar" className="avatar-img" />
+                            <img src={`${AVATAR}`}
+                                 alt="Sahan avatar" className="avatar-img" />
                         </div>
 
                         {/* micro-info card */}

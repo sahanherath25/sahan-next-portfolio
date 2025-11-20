@@ -2,7 +2,19 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiMongodb, SiStyledcomponents, SiTailwindcss, SiGit } from "react-icons/si";
+import {
+    SiJavascript,
+    SiReact,
+    SiNextdotjs,
+    SiNodedotjs,
+    SiMongodb,
+    SiStyledcomponents,
+    SiTailwindcss,
+    SiGit,
+    SiGithubactions
+} from "react-icons/si";
+import {FaDocker, FaJava, FaPython, FaSass} from "react-icons/fa";
+import {DiRedis} from "react-icons/di";
 
 const Section = styled.section`
   position: relative;
@@ -27,8 +39,8 @@ const Orb = styled.div`
 `;
 
 const Orb1 = styled(Orb)`
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 100px;
   background: linear-gradient(45deg, #ff6b6b, #ffa726);
   top: 10%;
   left: 10%;
@@ -36,7 +48,7 @@ const Orb1 = styled(Orb)`
 
 const Orb2 = styled(Orb)`
   width: 150px;
-  height: 150px;
+  height: 100px;
   background: linear-gradient(45deg, #4ecdc4, #556cd6);
   bottom: 10%;
   right: 10%;
@@ -56,31 +68,34 @@ const Grid = styled.div`
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   max-width: 1000px;
   margin: auto;
 `;
 
 const Card = styled(motion.div)`
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 18px;
-  padding: 2rem 1rem;
-  backdrop-filter: blur(12px);
-  text-align: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 1rem 1rem;
+    backdrop-filter: blur(12px);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  &:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 10px 40px rgba(59, 130, 246, 0.4);
-  }
+    &:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 10px 40px rgba(59, 130, 246, 0.4);
+    }
 
-  svg {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
+    svg {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
 `;
 
 const techStack = [
@@ -88,10 +103,16 @@ const techStack = [
     { name: "React", icon: <SiReact color="#61dafb" /> },
     { name: "Next.js", icon: <SiNextdotjs color="#ffffff" /> },
     { name: "Node.js", icon: <SiNodedotjs color="#3c873a" /> },
+    { name: "Java", icon: <FaJava  color="#ED8B00" /> },
+    { name: "Python", icon: <FaPython  color="#3776AB" /> },
     { name: "MongoDB", icon: <SiMongodb color="#4DB33D" /> },
     { name: "Styled Components", icon: <SiStyledcomponents color="#f472b6" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss color="#38bdf8" /> },
-    { name: "Git", icon: <SiGit color="#f14e32" /> },
+    { name: "Sass", icon: <FaSass   color="#CC6699" /> },
+    { name: "Docker", icon: <FaDocker color="#1D63ED" /> },
+    { name: "Github Action", icon: <SiGithubactions  color="#2088FF" /> },
+    { name: "Redis ", icon: <DiRedis color="#DC382D" /> },
+
 ];
 
 export default function TechStackSection() {
