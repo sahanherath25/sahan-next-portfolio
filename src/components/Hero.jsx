@@ -139,7 +139,7 @@ export default function Hero() {
                             transition={{ delay: 0.8 }}
                         >
                             <div className="card-title">Available for work</div>
-                            <div className="card-meta">Open to: Full-time · Freelance</div>
+                            <div className="card-meta">Open to: Part time · Freelance</div>
                         </motion.div>
                     </motion.div>
                 </div>
