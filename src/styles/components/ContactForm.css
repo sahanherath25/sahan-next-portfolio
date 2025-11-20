@@ -1,0 +1,127 @@
+/* Section */
+.contact-section {
+    padding: 90px 0;
+    background: #031626; /* Your dark navy theme */
+    color: #fff;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2ef5a7; /* Neon green accent */
+    margin-bottom: 50px;
+}
+
+/* Container */
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #1b2a38;
+    background: #060e16;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.input:focus {
+    border-color: #2ef5a7;
+    outline: none;
+    box-shadow: 0 0 8px #2ef5a771;
+}
+
+.error {
+    border-color: #ff4d7a !important;
+}
+
+.error-text {
+    color: #ff4d7a;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Button */
+.submit-btn {
+    background: #2ef5a7;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #031626;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+/* Blob Animation */
+.blob-container {
+    display: flex;
+    justify-content: center;
+}
+
+.blob {
+    width: 260px;
+    height: 260px;
+    background: #091c2c;
+    border: 3px solid #676f84;
+    border-radius: 40% 60% 55% 45% / 55% 45% 60% 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e2e2e2;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    animation: blobMorph 8s infinite ease-in-out;
+}
+
+@keyframes blobMorph {
+    0% {
+        border-radius: 40% 60% 55% 45% / 55% 45% 60% 40%;
+    }
+    50% {
+        border-radius: 55% 45% 65% 35% / 40% 60% 35% 65%;
+    }
+    100% {
+        border-radius: 40% 60% 55% 45% / 55% 45% 60% 40%;
+    }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .blob {
+        margin-top: 40px;
+    }
+}

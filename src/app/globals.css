@@ -1,26 +1,71 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/*@theme inline {*/
+/*  --color-background: var(--background);*/
+/*  --color-foreground: var(--foreground);*/
+/*  --font-sans: var(--font-geist-sans);*/
+/*  --font-mono: var(--font-geist-mono);*/
+/*}*/
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --background: #0a0a0a;*/
+/*    --foreground: #ededed;*/
+/*  }*/
+/*}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  width: 100%;
+  height: auto;
+  /*required for percentage heights to work margin: 0; */
+  padding: 0;
+  margin: 0;
+  /*color: aliceblue;*/
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+  /*border:2px solid darkred;*/
+}
+
+
+/*TODO Swiper Pagination*/
+
+/* Change arrow icon color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0c0c0c !important; /* Purple */
+}
+
+/* Optional: hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #0c0c0c !important; /* Pink on hover */
+}
+
+/* Inactive bullets */
+.swiper-pagination-bullet {
+  background: #0c0c0c !important; /* Purple */
+  opacity: 0.5;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #0c0c0c !important; /* Pink */
+  opacity: 1;
 }
