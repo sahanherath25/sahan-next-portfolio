@@ -19,7 +19,7 @@ return (
         className={` z-30 relative  overflow-hidden rounded-2xl border border-white/6 ${THEME.card} p-0 ${THEME.neon}`}
     >
         {/* image */}
-        <div className="relative z-50 h-44 w-full overflow-hidden rounded-t-2xl">
+        <div className=" z-50 h-44 w-full overflow-hidden rounded-t-2xl">
             <img
                 src={project.image}
                 alt={project.title}

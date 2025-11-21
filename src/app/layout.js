@@ -38,7 +38,7 @@ export default function RootLayout({children}) {
             {/*<StyledHeader/>*/}
             <main
 
-                className={" flex-grow flex w-full border border-red-900  mx-auto font-sans   mt-[71px] gap-16 z-100 "}>
+                className={" flex-grow flex w-full border border-red-900  mx-auto font-sans   mt-[71px] gap-16  "}>
                 {children}
             </main>
             {/*<Footer/>*/}

@@ -4,6 +4,7 @@ import TechStackSection from "@/components/TechStack";
 import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import Roadmap from "@/components/RoadMap";
+import ModernFAQ from "@/components/FAQ";
 // import ContactFormClient from "@/components/ContactForm2";
 
 export default function Home() {
@@ -30,6 +31,12 @@ export default function Home() {
             <div className={"col-span-4 "}>
 
                 <Roadmap/>
+
+            </div>
+
+            <div className={"col-span-4 "}>
+
+                <ModernFAQ/>
 
             </div>
 

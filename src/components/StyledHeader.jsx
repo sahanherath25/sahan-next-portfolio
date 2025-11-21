@@ -85,7 +85,7 @@ const StyledHeader = () => {
 
 
                     {/* Mobile Toggle */}
-                    <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                    <button className="menu-toggle " onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? <X size={22}/> : <Menu size={22}/>}
                     </button>
                 </div>

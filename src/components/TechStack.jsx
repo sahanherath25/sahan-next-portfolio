@@ -117,7 +117,7 @@ const techStack = [
 
 export default function TechStackSection() {
     return (
-        <Section>
+        <Section id={"techStack"}>
             {/* Background Orbs */}
             <Orb1 />
             <Orb2 />

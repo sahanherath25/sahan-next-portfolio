@@ -86,8 +86,7 @@ export default function ProjectsPage() {
 
 
     return (
-            <div className={`${THEME.bg} w-full min-h-screen text-white p-8`}>
-                <Link href={"/"}> <span className={"text-red-900"}>     Hello </span></Link>
+            <div className={`${THEME.bg} w-full min-h-screen text-white p-8 z-10 relative`}>
 
                 {/* Hero */}
                 <header className="max-w-6xl mx-auto mb-10">
