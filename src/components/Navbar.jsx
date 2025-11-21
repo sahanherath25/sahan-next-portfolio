@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import {Menu, X, Crown, Sparkles, GraduationCap, Code} from "lucide-react";
+import Link from "next/link"
 
 import "../styles/components/Navbar.css"
 
@@ -10,9 +11,9 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     const navLinks = [
-        { name: "Home", href: "#home" },
+        { name: "Home", href: "/" },
         { name: "About", href: "#about" },
-        { name: "Projects", href: "#projects" },
+        { name: "Projects", href: "/projects" },
         { name: "Skills", href: "#skills" },
         { name: "Contact", href: "#contact" },
     ];
@@ -29,21 +30,23 @@ const Navbar = () => {
                 {/* Logo Section */}
                 <div className="nav-logo">
                     <GraduationCap className="logo-icon" color={"#A7E399"} size={22} />
-                    <span className="brand-name">DevSahan</span>
-                    <Code className="sparkle-icon" size={18} />
+
+                    <Link href={"/"}><span className="brand-name">DevSahan</span> </Link>
+                        <Code className="sparkle-icon" size={18}/>
+
                 </div>
 
                 {/* Desktop Links */}
                 <div className="nav-links">
                     {navLinks.map((link, index) => (
-                        <a
+                        <Link
                             key={index}
                             href={link.href}
                             className="nav-link"
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 

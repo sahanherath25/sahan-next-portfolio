@@ -74,7 +74,7 @@ const SlideContent = ({ project, isActive }) => {
                             initial={{ opacity: 0, x: -50 }}
                             animate={isActive ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="border sm:mt-2   lg:ml-9  "
+                            className=" sm:mt-2   lg:ml-9  "
                         >
                             <motion.h2
                                 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent"

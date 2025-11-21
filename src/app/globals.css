@@ -40,6 +40,8 @@ html, body {
 body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  z-index: 1000;
   /*border:2px solid darkred;*/
 }
 
