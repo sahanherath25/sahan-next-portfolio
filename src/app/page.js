@@ -17,7 +17,7 @@ export default function Home() {
 
             <div className="col-span-4 ">
                 <HeroSlider/>
-                <h1 className={"text-xl m-2"}>Top Post</h1>
+                {/*<h1 className={"text-xl m-2"}>Top Post</h1>*/}
 
             </div>
 
