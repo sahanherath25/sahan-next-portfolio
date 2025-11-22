@@ -19,7 +19,7 @@ return (
         className={` z-30 relative  overflow-hidden rounded-2xl border border-white/6 ${THEME.card} p-0 ${THEME.neon}`}
     >
         {/* image */}
-        <div className=" z-50 h-44 w-full overflow-hidden rounded-t-2xl">
+        <div className=" z-10 relative h-44 w-full overflow-hidden rounded-t-2xl">
             <img
                 src={project.image}
                 alt={project.title}
@@ -30,7 +30,7 @@ return (
 
 
         {/* content */}
-        <div className="p-5">
+        <div className="p-5 ">
             <div className="flex items-start justify-between gap-3">
                 <div>
                     <h3 className="text-lg font-semibold leading-tight">{project.title}</h3>
@@ -48,12 +48,12 @@ return (
 
 
             <div className="mt-5 flex gap-3">
-                <a target="_blank" href={project.live} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm bg-gradient-to-r ${THEME.accent} text-white shadow-md hover:brightness-110 transition">
+                <a target="_blank" href={project.live} className="inline-flex items-center gap-2 px-4 py-2 rounded-xl font-medium text-sm bg-white/10 backdrop-blur-lg border border-white/20 text-white shadow-lg hover:bg-white/20  bg-gradient-to-br from-slate-900 via-purple-900 to-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl">
                     Live Demo
                 </a>
-                <a target="_blank"  href={project.github} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm border border-white/8 text-gray-100 hover:bg-white/3 transition">
-                    GitHub
-                </a>
+                {/*<a aria-disabled={true} target="_blank"  href={project.github} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm border border-white/8 text-gray-100 hover:bg-white/3 transition">*/}
+                {/*    GitHub*/}
+                {/*</a>*/}
                 {/*<a href={project.caseStudy} className="ml-auto text-sm text-gray-300 hover:underline">Case Study</a>*/}
             </div>
         </div>

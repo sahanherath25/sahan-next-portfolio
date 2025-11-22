@@ -16,10 +16,10 @@ const projectsData = [
     {
         id: 'next-1',
         type: 'Next.js',
-        title: 'NextShop — E‑commerce (Next.js)',
+        title: 'Insight Blog (Next.js)',
         desc: 'SSR storefront with incremental static regeneration, cart, and Stripe checkout.',
         tech: ['Next.js', 'React', 'Tailwind', 'Stripe', 'Vercel'],
-        image: '/mnt/data/df1aa8f2-a993-4d67-bffe-a792f10889bc.png',
+        image: 'https://mtuxinxjrxvkdupfsauk.supabase.co/storage/v1/object/public/projects//next_project_blogpost.png',
         github: '#',
         live: 'https://insight-blog.vercel.app/',
         caseStudy: '#',
@@ -29,18 +29,29 @@ const projectsData = [
         title: 'Portfolio — (Next.js)',
         desc: 'SSR storefront with incremental static regeneration, cart, and Stripe checkout.',
         tech: ['Next.js', 'React', 'Tailwind', 'Vercel'],
-        image: '/mnt/data/df1aa8f2-a993-4d67-bffe-a792f10889bc.png',
+        image: 'https://mtuxinxjrxvkdupfsauk.supabase.co/storage/v1/object/public/projects//next2.jpeg',
         github: '#',
         live: 'https://diana-25-portfolio.netlify.app/',
         caseStudy: '#',
     },
     {
-        id: 'react-1',
-        type: 'React',
-        title: 'Portfolio (React)',
+        id: 'next-3',
+        type: 'Next.js',
+        title: 'Crave Crust (React)',
         desc: 'Responsive single page app showcasing projects .' ,
         tech: ['React', 'Framer Motion', 'Tailwind'],
-        image: '/mnt/data/df1aa8f2-a993-4d67-bffe-a792f10889bc.png',
+        image: 'https://mtuxinxjrxvkdupfsauk.supabase.co/storage/v1/object/public/projects//code-snippet.png',
+        github: '#',
+        live: 'https://advanced-code-snippet.vercel.app',
+        caseStudy: '#',
+    },
+    {
+        id: 'react-1',
+        type: 'React',
+        title: 'Crave Crust (React)',
+        desc: 'Responsive single page app showcasing projects .' ,
+        tech: ['React', 'Framer Motion', 'Tailwind'],
+        image: 'https://mtuxinxjrxvkdupfsauk.supabase.co/storage/v1/object/public/projects/Project1.jpeg',
         github: '#',
         live: 'https://crave-crust-sahan.netlify.app/',
         caseStudy: '#',
@@ -86,7 +97,7 @@ export default function ProjectsPage() {
 
 
     return (
-            <div className={`${THEME.bg} w-full min-h-screen text-white p-8 z-10 relative`}>
+            <div className={`${THEME.bg} w-full min-h-screen text-white p-8 z-11 relative z-10`}>
 
                 {/* Hero */}
                 <header className="max-w-6xl mx-auto mb-10">

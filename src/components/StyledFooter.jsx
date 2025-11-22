@@ -20,11 +20,12 @@ const StyledFooter = () => {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
-        { icon: Github, href: "#", label: "GitHub" },
+        { icon: Github, href: "https://github.com/sahanherath25", label: "GitHub" },
+        { icon: Linkedin, href: "http://www.linkedin.com/in/sahanherath25", label: "LinkedIn" },
+        { icon: Mail, href: "mailto:sahanherath444@gmail.com", label: "Email" },
         { icon: Twitter, href: "#", label: "Twitter" },
-        { icon: Linkedin, href: "#", label: "LinkedIn" },
-        { icon: MessageCircle, href: "#", label: "Discord" },
-        { icon: Mail, href: "#", label: "Email" }
+        { icon: MessageCircle, href: "mailto:sahanherath555@gmail.com", label: "Discord" },
+
     ];
 
     const quickLinks = [
@@ -105,6 +106,7 @@ const StyledFooter = () => {
                         {supportLinks.map((link, index) => (
                             <li key={index}>
                                 <a
+                                    target="_blank"
                                     href={link.href}
                                     className="footer-link"
                                     style={{ animationDelay: `${index * 0.05 + 0.2}s` }}

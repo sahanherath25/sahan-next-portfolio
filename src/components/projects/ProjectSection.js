@@ -11,7 +11,7 @@ const THEME = {
 
 const ProjectSection = ({ title, projects }) => {
     return (
-        <section className="w-full">
+        <section className="w-full ">
             <div className="flex items-center gap-4 mb-6">
                 <div className="w-1 h-10 rounded-sm bg-gradient-to-b from-purple-400 to-pink-500" />
                 <h3 className="text-2xl font-bold">{title}</h3>

@@ -4,7 +4,7 @@ import TechStackSection from "@/components/TechStack";
 import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import Roadmap from "@/components/RoadMap";
-import ModernFAQ from "@/components/FAQ";
+import HomeAccordion from "@/components/HomeAccordion";
 // import ContactFormClient from "@/components/ContactForm2";
 
 export default function Home() {
@@ -36,7 +36,7 @@ export default function Home() {
 
             <div className={"col-span-4 "}>
 
-                <ModernFAQ/>
+                <HomeAccordion/>
 
             </div>
 

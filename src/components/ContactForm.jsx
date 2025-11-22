@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { motion } from "framer-motion";
 import "../styles/components/ContactForm.css";
+import {FaArrowRight} from "react-icons/fa";
 
 // 💜 ZOD VALIDATION SCHEMA
 const schema = z.object({
@@ -101,7 +102,12 @@ export default function ContactForm() {
                         whileTap={{ scale: 0.95 }}
                         className="submit-btn"
                     >
-                        Send Message ✉️
+
+                        <div className={"flex items-center justify-center "}>
+                            <span className={"mr-5"}> Send Message </span>
+                            <FaArrowRight color={"#ae4949"}/>
+                        </div>
+
                     </motion.button>
                 </motion.form>
 
