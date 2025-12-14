@@ -64,8 +64,8 @@ export default function Hero() {
             <div className="hero-inner">
                 <div className="hero-left">
                     <div className="intro-meta">
-                        <span className="meta-pill">Full-Stack</span>
-                        <span className="meta-pill alt">React • Next.js • Node</span>
+                        <span className="meta-pill">System Administration and IT Support </span>
+                        <span className="meta-pill alt">Linux Windows Networking</span>
                     </div>
 
                     <motion.h1
@@ -97,8 +97,9 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.6 }}
                     >
-                        Designing and building delightful web apps — fast, accessible, and maintainable.
-                        Focused on clear UX, performance, and polished UI details that people remember.
+                        Focused on IT support and system administration with hands-on experience in Linux and Windows environments.
+                        Skilled in troubleshooting hardware, software, and network issues while ensuring system reliability and user support.
+
                     </motion.p>
 
                     <motion.div
@@ -138,7 +139,7 @@ export default function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8 }}
                         >
-                            <div className="card-title">Available for work</div>
+                            <div className="card-title">Cyber security enthusiast</div>
                             <div className="card-meta">Open to: Part time · Freelance</div>
                         </motion.div>
                     </motion.div>
